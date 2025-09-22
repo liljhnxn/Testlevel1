@@ -1,7 +1,8 @@
 body {
     width: 100%;
-    height: 500vh;
+    height: 600vh;
     overflow-x: hidden;
+    margin: 0;
 }
 .mother {
     width: 100%;
@@ -28,18 +29,21 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-left: 50px;
-    margin-top: 20px;
+    margin-left: 80px;
     background-color: rgb(0, 0, 0, 0.25);
     color: white;
     border: none;
     position: sticky;
-    position: absolute;
-
+    
 }
 .left {
     padding-left: 20px;
     font-size: 20px;
+}
+.right {
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
 }
 .vista {
     display: flex;
@@ -49,50 +53,65 @@ nav {
     padding-right: 50px;
     gap: 20px;
     font-size: 17px;
+    
 }
-.con {
-    width: 5px;
-    height: 5px;
-    border-radius: 20px;
-    background-color: #77590A;
+
+.num {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #A76C34;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    height: 40px;
+    width: 130px;
+    font-size: 16px;
+}
+.num:hover {
+        animation: big 2s ease;
+        background-color: #64411F;
+
+
 }
 
 .text {
-    margin-top: 250px;
+    margin-top: 10px;
     margin-left: 70px;
 }
 .text span {
     font-size: 20px;
     color: white;
     position: absolute;
-    margin-top: 230px;
+    margin-top: 150px;
 }
 .text h1 {
     font-size: 50px;
     color: white;
     position: absolute;
-    margin-top: 280px;
+    margin-top: 180px;
+
 }
 .text small {
     font-size: 20px;
     color: white;
     position: absolute;
-    margin-top: 350px;
+    margin-top: 250px;
 }
 .number {
-    width: 100px;
-    height: 50px;
-    background-color: red;
-    margin-top: 300px;
-    align-items: center;
-    display: flex;
-    border-radius: 50px;
-    justify-content: center;
-    position: absolute;
-    margin-top: 510px;
+    margin-top: 420px;
     margin-left: 60px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #A76C34;
     color: white;
-    font-size: 17px;
+    border: none;
+    border-radius: 50px;
+    height: 40px;
+    width: 130px;
+    font-size: 16px;
 }
 
 .second-mother {
@@ -174,7 +193,7 @@ nav {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: red;
+    background-color: #A76C34;
     align-items: center;
     display: flex;
     justify-content: center;
@@ -202,7 +221,7 @@ nav {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: red;
+    background-color: #A76C34;
     align-items: center;
     display: flex;
     justify-content: center;
@@ -214,7 +233,7 @@ nav {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: red;
+    background-color: #A76C34;
     align-items: center;
     display: flex;
     justify-content: center;
@@ -226,7 +245,7 @@ nav {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: red;
+    background-color: #A76C34;
     align-items: center;
     display: flex;
     justify-content: center;
@@ -236,13 +255,15 @@ nav {
 }
 .fourth-mother {
     width: 100%;
-    height: 200vh;
+    height: 80vh;
     border: 1px solid gray;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
     background-color: #E4D1C0;
-    background-color: ;
 }
 .fourth-mother span {
-    color: red;
+    color: #A76C34;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -252,12 +273,648 @@ nav {
 }
 .design {
     display: flex;
+    gap: 10px;
+    justify-content: center;
+
 }
 .shape {
-    width: 70px;
-    height: 30px;
+    width: 150px;
+    height: 40px;
+    border: 1px solid #A76C34;
+    border-radius: 50px;
+    margin-top: 40px;
+}
+.first {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #A76C34;
+    color: white;
+    font-size: 17px;
+}
+.second {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #A76C34;
+}
+.third {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #A76C34;
+}
+.fourth {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #A76C34;
+}
+.egypt {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.fan {
+    width: 300px;
+    height: 300px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin-top: 40px;
+}
+.big1 {
+    width: 300px;
+    height: 200px;
+    background-image: url(./images/pharaoh.jpg);
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+.big2 {
+    width: 300px;
+    height: 130px;
+    background-color: #F2E9E1;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.dog {
+    margin-left: 20px;
+    padding: 3px;
+}
+.big2 h3 {
+    font-size: 20px;
+    font-weight: 500;
+}
+.big2 p {
+    color: #685746;
+    font-size: 15px;
+    color: #2E1E0E;
+    font-weight: 500px;
+}
+.big2 small {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #86562A;
+    gap: 3px;
+}
+.emma1 {
+    width: 300px;
+    height: 200px;
+    background-image: url(./images/statue.jpg);
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.emma2{
+    width: 300px;
+    height: 130px;
+    background-color: #F2E9E1;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.emma2 h3 {
+    font-size: 20px;
+    font-weight: 500;
+}
+.emma2 p {
+    color: #685746;
+    font-size: 15px;
+    color: #2E1E0E;
+    font-weight: 500px;
+}
+.emma2 small {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #86562A;
+    gap: 3px;
+}
+.dare1 {
+    width: 300px;
+    height: 200px;
+    background-image: url(./images/sudan.jpeg);
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.dare2 {
+    width: 300px;
+    height: 130px;
+    background-color: #F2E9E1;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.dare2 h3 {
+    font-size: 20px;
+    font-weight: 500;
+}
+.dare2 p {
+    color: #685746;
+    font-size: 15px;
+    color: #2E1E0E;
+    font-weight: 500px;
+}
+.dare2 small {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #86562A;
+    gap: 3px;
+}
+
+.newm1 {
+    width: 300px;
+    height: 200px;
+    background-image: url(./images/egypt.jpg);
+    background-size: cover;
+    background-position: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.newm2 {
+    width: 300px;
+    height: 130px;
+    background-color: #F2E9E1;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.newm2 h3 {
+    font-size: 20px;
+    font-weight: 500;
+}
+.newm2 p {
+    color: #685746;
+    font-size: 15px;
+    color: #2E1E0E;
+    font-weight: 500px;
+}
+.newm2 small {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    color: #86562A;
+    gap: 3px;
+}
+
+.fifth-mother {
+    width: 100%;
+    height: 100vh;
+    background-color: #E4D1C0;
+}
+.gallery{
+    color: #A76C34;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 45px;
+    font-weight: 400;
+    padding: 30px 0px;
+}
+.bigmother {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
     
 }
+.pic1 {
+    width: 30%;
+    height: 80vh;
+    /* border: 1px solid grey; */
+}
+.pic2 {
+    width: 10%;
+    height: 80vh;
+}
+.pic3 {
+    width: 20%;
+    height: 80vh;
+    border-radius: 10px;
+    background-image: url(./images/rocky.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.pic11 {
+    width: 85%;
+    height: 40vh;
+    border: 0px solid gray;
+    border-radius: 10px;
+    background-image: url(./images/waterfall.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-left: 30px;
+}
+.pic12 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    height: 40vh;
+    border: 0px solid grey;
+}
+.pic121 {
+    width: 70%;
+    height: 15vh;
+    margin-left: 30px;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+}
+.pic121:nth-child(1) {
+    background-image: url(./images/pharaoh.jpg);
+}
+.pic121:nth-child(2) {
+    background-image: url(./images/waterfall.jpg);
+}
+.pic121:nth-child(3) {
+    background-image: url(./images/houses.jpg);
+}
+.pic121:nth-child(4) {
+    background-image: url(./images/animal.jpg);
+}
+.pic21 {
+    width: 85%;
+    height: 38vh;
+    margin-left: 10px;
+    border-radius: 10px;
+    background-image: url(./images/girrafe23.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.pic22 {
+    width: 85%;
+    height: 35vh;
+    margin-left: 10px;
+    border-radius: 10px;
+    margin-top: 27px;
+    background-image: url(./images/lighthouse.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.pic4 {
+    width: 30%;
+    height: 80vh;
+    /* border: 1px solid grey; */
+}
+.pic41 {
+    width: 85%;
+    height: 40vh;
+    border: 0px solid gray;
+    border-radius: 10px;
+    background-image: url(./images/girrafin.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-left: 30px;
+    position: relative;
+ 
+}
+.overtin {
+    width: 100%;
+    height: 40vh;
+    background-color: black;
+    opacity: 0.3;
+    border-radius: 10px;
+    position: absolute;
+}
+.texting {
+    position: absolute;
+    color: #FFFFFF;
+    margin-top: 100px;
+    left: 150px;
+    font-size: 70px;
+    font-weight: 600;
+    font-style: italic;
+
+}
+.pic42 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    height: 40vh;
+    border: 0px solid grey;
+}
+.pic421 {
+    width: 70%;
+    height: 15vh;
+    margin-left: 30px;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+}
+.pic421:nth-child(1) {
+    background-image: url(./images/sudan.jpeg);
+}
+.pic421:nth-child(2) {
+    background-image: url(./images/water\ tank.jpg);
+}
+.pic421:nth-child(3) {
+    background-image: url(./images/statue.jpg);
+}
+.pic421:nth-child(4) {
+    background-image: url(./images/color\ beuaty.jpg);
+}
+
+.sixth-mother {
+    width: 100%;
+    height: 70vh;
+    background-image: url(./images/tree\ girrafe.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.over2 {
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 70vh;
+    opacity: 0.6;
+}
+.textin {
+    color: #FFFFFF;
+    position: absolute;
+    left: 44%;
+    font-size: 35px;
+    font-weight: 500;
+    margin-top: 70px;
+}
+.circling {
+    position: absolute;
+    height: 90px;
+    width: 90px;
+    border-radius: 50px;
+    background-color: white;
+    left: 47%;
+    margin-top: 140px;
+}
+.life {
+    position: absolute;
+    left: 30%;
+    margin-top: 260px;
+    color: white;
+    font-size: 30px;
+}
+.stars {
+    position: absolute;
+    left: 41%;
+    margin-top: 350px;
+}
+.ratings {
+    color: white;
+    font-style: italic;
+    font-size: 17px;
+}
+.rate {
+    color: white;
+    font-size: 25px;
+}
+.seventh-mother {
+    width: 100%;
+    height: 95vh;
+    background-color: #E4D1C0;
+    display: flex;
+}
+.left21 {
+    height: 90vh;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img {
+    height: 590px;
+    width: 610px;
+    background-image: url(./images/IMG-20250918-WA0018-removebg-preview.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.righty22 {
+    height: 90vh;
+    width: 50%;
+    /* display: flex;
+    justify-content: center; */
+}
+.oxe {
+    color: #A76C34;
+    font-size: 45px;
+    font-weight: 500;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+}
+
+.thingy {
+    width: 650px;
+    height: 400px;
+    background-color: #F2E9E1;
+    border-radius: 20px;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    gap: 30px;
+}
+.uncle {
+    display: flex;
+    gap: 15px;
+}
+.uncle span {
+    color: #3A2612;
+}
+.cousin {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+.nephew {
+    display: flex;
+    flex-direction: column;
+}
+.input {
+    width: 270px;
+    height: 40px;
+    border-radius: 10px;
+    border-color: #B7BFC7;
+
+}
+.hold  {
+    display: flex;
+    flex-direction: column;
+}
+.hold input {
+    width: 555px;
+    height: 40px;
+    border-radius: 10px;
+    border-color: #B7BFC7;
+}
+.holding {
+    display: flex;
+    flex-direction: column;
+}
+.holding input {
+    width: 555px;
+    height: 40px;
+    border-radius: 10px;
+    border-color: #B7BFC7;
+}
+.run {
+    display: flex; 
+    gap: 340px;  
+}
+.numeric {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #A76C34;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    height: 40px;
+    width: 130px;
+    font-size: 16px;
+}
+.numera {
+    color: #A76C34;
+    font-size: 18px;
+}
+
+.eight-mother {
+    width: 100%;
+    height: 68vh;
+    background-image: url(./images/Nigeria_map_bg_changed.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.top {
+    width: 100%;
+    height: 68vh;
+    background-color: #D5B79D;
+    opacity: 0.9;position: absolute;
+}
+
+.bigtop {
+    padding: 70px 130px;
+    color: #8F7C69;
+    display: flex;
+}
+.top1 {
+    width: 250px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.top2 {
+    width: 300px;
+    height: 350px;
+}
+.top3 {
+    width: 300px;
+    height: 350px;
+}
+.top4 {
+    width: 300px;
+    height: 350px;
+}
+.top5 {
+    width: 380px;
+    height: 350px;
+}
+
+.textedite {
+    display: flex;
+    align-items: center;
+    color: #8E7B68;
+    font-size: 25px;
+    gap: 3px;
+    font-weight: 550;
+}
+.edit {
+    display: flex;
+    flex-direction: column;
+    font-size: 17px;
+    font-weight: 100;
+    gap: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.icons {
+    display: flex;
+    gap: 10px;
+}
+.flex1 {
+    width: 400px;
+    height: 50px;
+    display: flex;
+}
+.fans1 {
+    height: 45px;
+    width: 300px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background-color: transparent;
+    font-family: 'Times New Roman', Times, serif;
+    border-color: #8F7C69;
+    margin-top: -17px;
+}
+.fans2 {
+    width: 80px;
+    height: 50px;
+    background-color: #C69F7A;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -17px;
+}
+@keyframes big {
+    0%   { transform: scale(1); }
+    30%  { transform: scale(1.2); }
+    50%  { transform: scale(0.9); }
+    70%  { transform: scale(1.05); }
+    100% { transform: scale(1); }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
